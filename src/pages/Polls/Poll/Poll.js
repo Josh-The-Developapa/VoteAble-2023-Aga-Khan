@@ -18,7 +18,7 @@ function Poll(props) {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     async function poll() {
       setIsLoading(true);
-      const res = await fetch(`voteable-backend.onrender.com/v1/poll/${ pollId }`, {
+      const res = await fetch(`https://voteable-backend.onrender.com/v1/poll/${ pollId }`, {
         method: "GET",
       });
       setIsLoading(false);
@@ -36,7 +36,7 @@ function Poll(props) {
 
   async function vote() {
     const optiontext = option.text;
-    const res = await fetch(`voteable-backend.onrender.com/v1/vote/${ pollId }`, {
+    const res = await fetch(`https://voteable-backend.onrender.com/v1/vote/${ pollId }`, {
       method: "POST",
       body: JSON.stringify({
         answer: optiontext,
@@ -105,7 +105,7 @@ function Poll(props) {
               ? options.map((option) => {
                 return (
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', padding: '5px', borderBottom: '2px black solid', marginBottom: '12px' }}>
-                    {option.photo ? <img src={`voteable-backend.onrender.com/uploads/${ option.photo }`} className='optionImg' /> : ''}
+                    {option.photo ? <img src={`https://voteable-backend.onrender.com/uploads/${ option.photo }`} className='optionImg' /> : ''}
                     <input
                       style={{ accentColor: '#4600b6', cursor: 'pointer' }}
                       className="option"

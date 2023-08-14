@@ -43,7 +43,7 @@ function Results() {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     async function poll() {
       setIsLoading(true);
-      const res = await fetch(`voteable-backend.onrender.com/v1/poll/${ pollId }`, {
+      const res = await fetch(`https://voteable-backend.onrender.com/v1/poll/${ pollId }`, {
         method: "GET",
       });
       setIsLoading(false);

@@ -88,7 +88,7 @@ function CreatePoll() {
     });
 
     try {
-      const res = await fetch("voteable-backend.onrender.com/v1/create-poll", {
+      const res = await fetch("https://voteable-backend.onrender.com/v1/create-poll", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

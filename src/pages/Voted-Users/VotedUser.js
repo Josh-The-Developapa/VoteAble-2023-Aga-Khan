@@ -25,7 +25,7 @@ function VotedUser() {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
         async function votedUsers(param) {
-            const res = await fetch(`voteable-backend.onrender.com/v1/voted-users/${ param }`, {
+            const res = await fetch(`https://voteable-backend.onrender.com/v1/voted-users/${ param }`, {
                 method: "GET"
             });
 
@@ -46,7 +46,7 @@ function VotedUser() {
         // eslint-disable-next-line
 
         async function poll() {
-            const res = await fetch(`voteable-backend.onrender.com/v1/poll/${ pollId }`, {
+            const res = await fetch(`https://voteable-backend.onrender.com/v1/poll/${ pollId }`, {
                 method: "GET",
             });
             const data = await res.json();

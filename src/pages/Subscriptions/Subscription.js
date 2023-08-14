@@ -37,7 +37,7 @@ function Subscription() {
                     <li>Poll lasts for 1 Month</li>
                     <li>Priority support</li>
                 </ul>
-                <form action={`voteable-backend.onrender.com/create-checkout-session/price_1LnSbdFoXys89NW0jPj1S16M`} method="POST" style={{ width: '85%' }}>
+                <form action={`https://voteable-backend.onrender.com/create-checkout-session/price_1LnSbdFoXys89NW0jPj1S16M`} method="POST" style={{ width: '85%' }}>
                     <button className='cBtn' style={{ width: '100%' }}>Checkout</button>
                 </form>
             </div>
@@ -53,7 +53,7 @@ function Subscription() {
                     <li>Poll lasts for 6 Months</li>
                     <li>Priority support</li>
                 </ul>
-                <form action={`voteable-backend.onrender.com/create-checkout-session/price_1LnSfaFoXys89NW0HR8qqwId`} method="POST" style={{ width: '85%' }}>
+                <form action={`https://voteable-backend.onrender.com/create-checkout-session/price_1LnSfaFoXys89NW0HR8qqwId`} method="POST" style={{ width: '85%' }}>
                     <button className='cBtn' style={{ width: '100%' }}>Checkout</button>
                 </form>
             </div>
@@ -69,7 +69,7 @@ function Subscription() {
                     <li>Poll lasts for 1 Year</li>
                     <li>Priority support</li>
                 </ul>
-                <form action={`voteable-backend.onrender.com/create-checkout-session/price_1LnSjDFoXys89NW0yado7YFk`} method="POST" style={{ width: '85%' }}>
+                <form action={`https://voteable-backend.onrender.com/create-checkout-session/price_1LnSjDFoXys89NW0yado7YFk`} method="POST" style={{ width: '85%' }}>
                     <button className='cBtn' style={{ width: '100%' }}>Checkout</button>
                 </form>
             </div>

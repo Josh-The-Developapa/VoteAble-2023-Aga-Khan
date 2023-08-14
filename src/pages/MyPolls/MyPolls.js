@@ -37,7 +37,7 @@ function Home() {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     const myPolls = async () => {
       setIsLoading(true);
-      const res = await fetch("voteable-backend.onrender.com/v1/myPolls", {
+      const res = await fetch("https://voteable-backend.onrender.com/v1/myPolls", {
         method: "GET",
       });
       const data = await res.json();
@@ -164,7 +164,7 @@ function Home() {
                   className="dBtn"
                   onClick={async () => {
                     const res = await fetch(
-                      `voteable-backend.onrender.com/v1/delete-poll/${ poll._id }`,
+                      `https://voteable-backend.onrender.com/v1/delete-poll/${ poll._id }`,
                       {
                         method: "DELETE",
                         credentials: "include",
@@ -197,7 +197,7 @@ function Home() {
                     <RWebShare
                       data={{
                         text: `VoteAble - ${ poll.question }`,
-                        url: `voteable-app.onrender.com/poll/${ poll._id }`,
+                        url: `https://voteable-app.onrender.com/poll/${ poll._id }`,
                         title: `VoteAble Poll - ${ poll.question }`,
                       }}
                       onClick={() => console.log("shared successfully!")}
@@ -221,7 +221,7 @@ function Home() {
                   aria-describedby="modal-modal-description"
                   style={{ marginTop: "50px", marginLeft: '1%' }}
                 // `http://192.168.3.21:3000/poll/${poll._id}`
-                ><div className="pollc"> <QRCode value={`voteable-app.onrender.com/${ poll._id }`} style={{ marginTop: '25px' }} /></div>
+                ><div className="pollc"> <QRCode value={`https://voteable-app.onrender.com/${ poll._id }`} style={{ marginTop: '25px' }} /></div>
                 </Modal>
               </div>
             );

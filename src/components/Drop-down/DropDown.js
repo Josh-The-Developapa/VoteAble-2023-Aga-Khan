@@ -97,7 +97,7 @@ function DropDown(props) {
             </Menuu>
           </div> : ''}
 
-        {/* <form action='voteable-backend.onrender.com/v1/create-checkout-session' method="POST">
+        {/* <form action='https://voteable-backend.onrender.com/v1/create-checkout-session' method="POST">
           <button className="btnn" type="submit">Donate</button>
         </form> */}
         {localStorage.getItem('name') ? <NavLink to="/subscribe">
