@@ -1,9 +1,7 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import Login from "./pages/Login/Login.js";
 import MyPolls from "./pages/MyPolls/MyPolls.js";
-import Signup from "./pages/Signup/Signup.js";
-import Forgot from "./pages/Forgot-password/Forgot.js";
-import Reset from "./pages/Reset-password/Reset.js";
+
 import Poll from "./pages/Polls/Poll/Poll.js";
 import CreatePoll from "./pages/Polls/Create-poll/CreatePoll.js";
 import Results from "./pages/Results/Results.js";
