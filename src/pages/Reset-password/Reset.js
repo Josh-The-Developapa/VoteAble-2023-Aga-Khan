@@ -21,7 +21,7 @@ export default function Reset() {
   const resetPass = async function () {
     if (password) {
       const res = await fetch(
-        `http://localhost:8000/v1/reset-password/${ resetToken }`,
+        `voteable-backend.onrender.com/v1/reset-password/${ resetToken }`,
         {
           method: "POST",
           credentials: "include",
@@ -64,7 +64,7 @@ export default function Reset() {
   );
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-  }, [])
+  }, []);
 
 
   return (

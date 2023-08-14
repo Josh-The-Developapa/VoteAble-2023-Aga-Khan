@@ -37,7 +37,7 @@ function PollChains() {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         const myPolls = async () => {
             setIsLoading(true);
-            const res = await fetch("http://localhost:8000/v1/my-poll-chains", {
+            const res = await fetch("voteable-backend.onrender.com/v1/my-poll-chains", {
                 method: "GET",
                 credentials: "include",
             });
@@ -125,7 +125,7 @@ function PollChains() {
                                     className="dBtn"
                                     onClick={async () => {
                                         const res = await fetch(
-                                            `http://localhost:8000/v1/delete-poll-chain/${ poll._id }`,
+                                            `voteable-backend.onrender.com/v1/delete-poll-chain/${ poll._id }`,
                                             {
                                                 method: "DELETE",
                                                 credentials: "include",
@@ -159,20 +159,20 @@ function PollChains() {
                                         <RWebShare
                                             data={{
                                                 text: `VoteAble - ${ poll.name }`,
-                                                url: `http://localhost:3000/poll-chain/${ poll._id }`,
+                                                url: `voteable-app.onrender.com/poll-chain/${ poll._id }`,
                                                 title: `VoteAble Poll Chain - ${ poll.name }`,
                                             }}
                                             onClick={() => console.log("shared successfully!")}
                                         >
                                             <MenuItem onClick={() => {
-                                                handleOpenModal()
-                                                handleClose()
+                                                handleOpenModal();
+                                                handleClose();
                                             }}>Share</MenuItem>
                                         </RWebShare>
                                         {/* </MenuItem> */}
                                         <MenuItem onClick={() => {
-                                            handleOpenModal()
-                                            handleClose()
+                                            handleOpenModal();
+                                            handleClose();
                                         }}>Scan QR code</MenuItem>
                                     </Menuu>
                                 </div >
