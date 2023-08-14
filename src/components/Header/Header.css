@@ -1,0 +1,146 @@
+h5 {
+  max-width: 230px;
+  overflow-x: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.avatarImg {
+  border-radius: 25px;
+}
+
+.small-box {
+  background-color: rgb(204, 204, 204);
+  border-radius: 15px;
+  height: 10px;
+  width: 15px;
+}
+
+.profile-tab-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(215, 214, 214);
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+img {
+  position: relative;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 654px) {
+  .h4 {
+    display: none;
+  }
+  /* .profile-tab-btn {
+    display: none;
+  } */
+  #ff {
+    display: none;
+  }
+  .navBar {
+    position: fixed;
+    left: 0;
+    z-index: 9;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  .popo {
+    display: none;
+  }
+  .btn-n {
+    display: none;
+  }
+  .img {
+    margin-left: 25px;
+  }
+  .Menu {
+    position: relative;
+    color: #4600b6;
+    cursor: pointer;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 654px) {
+  .navBar {
+    position: fixed;
+    left: 0;
+    z-index: 9;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .Menu {
+    cursor: auto;
+    opacity: 0;
+  }
+  .popo {
+    cursor: pointer;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #4600b6;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    border: none;
+    width: 100px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .popo:focus {
+    outline: 0;
+  }
+
+  .popo:hover {
+    background: #4a00aa;
+  }
+
+  .btn-n {
+    cursor: pointer;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #4600b6;
+    padding: 15px;
+    border-radius: 15px;
+    /* display: inline-block; */
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .btn-n:hover {
+    background: #4a00aa;
+  }
+
+  .btn-n:focus {
+    outline: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.svg {
+  height: 45vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.svg3 {
+  height: 16vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 550px) {
+  .svg {
+    height: 20vw;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .hc {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .svg3 {
+    height: 40vw;
+  }
+}

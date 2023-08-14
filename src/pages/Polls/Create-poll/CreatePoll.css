@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 40px;
+  width: 350px;
+}
+
+.fileUpload {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 100%;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 25px !important;
+}
+
+h2 {
+  max-height: 70px;
+  overflow-x: auto;
+  max-width: 300px;
+}
+
+ol {
+  max-height: 100px;
+  max-width: 300px;
+  overflow-y: auto;
+  background-color: #dedede;
+  padding-top: 5px;
+}
+
+.qInput {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

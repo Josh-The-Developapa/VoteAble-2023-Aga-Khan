@@ -1,0 +1,16 @@
+.dNut {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: whitesmoke;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
